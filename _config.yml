@@ -1,0 +1,30 @@
+---
+permalink: /:year/:month/:title
+lsi: false
+markdown: kramdown
+highlighter: pygments
+
+port: 4000
+safe: false
+exclude: [CNAME, README.md, .gitignore]
+
+permalink:     date
+paginate_path: /page:num
+timezone:      null
+
+
+# Color for top bar, links, etc
+highlight_color: '#2583ad'
+
+url: http://hammondcarpentry.com
+
+
+# "Hi, I'm _______"
+name: Hammond Carpentry
+email: jadhammond@gmail.com
+
+# Google Analytics key, leave blank to ignore
+google_analytics_key: UA-49607422-1
+
+# Toggle "Postings are my own" disclaimer in footer
+show_disclaimer: false

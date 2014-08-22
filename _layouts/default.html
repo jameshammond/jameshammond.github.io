@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.name }} - {{ page.title }}</title>
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="description" content="The homepage of {{ site.name }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="main">
+
+    <!-- header -->
+    <div id="header">
+    	<div id="header_part2">
+    		<div id="header_part3">
+    			<h1 id="home_h3_link"><a href="http://hammondcarpentry.com/" >{{ site.name }}</a></h1>
+    			<span>
+    			Virginia Beach Based Carpentry<br />
+    			Skilled Professional Reliable
+    			</span>
+    			<br clear="both" \>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- navigation -->
+
+    <ul id="nav">
+    	<li {% if page.url == '/index.html' %} class="active"{% endif %}><a href="/">About Us</a></li>
+      {% for node in site.posts %}
+        <li {% if page.url == node.url %} class="active"{% endif %}><a href="{{node.url}}">{{node.title}}</a></li>
+      {% endfor %}
+      <li {% if page.url == '/references.html' %} class="active"{% endif %}><a href="/references.html">References</a></li>
+    	<li {% if page.url == '/contact.html' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <div id="content_wrapper">
+      <div id="content">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </div>
+
+{% include analytics.html %}
+</body>
+</html>
