@@ -22,4 +22,4 @@ construction to fine historical repairs, to the most challenging of
 structural repairs and improvements, Hammond Carpentry's skill,
 knowledge, and professionalism will exceed your expectations.
 
-<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/9A7Qj/embed?background=f2f2f2&text=1a1a1a&link=4e76c9"></iframe>
+<iframe src="https://albumizr.com/a/Yppj6A" scrolling="no" frameborder="0" allowfullscreen width="100%" height="550"></iframe>
